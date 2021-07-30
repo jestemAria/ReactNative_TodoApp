@@ -15,9 +15,10 @@ const styles = StyleSheet.create({
     listItem: {
         padding: 10,
         marginVertical: 10,
-        backgroundColor: '#ccc',
+        backgroundColor: '#3385ff',
         borderColor: 'black',
-        borderWidth: 1
+        borderWidth: 2,
+        borderRadius: 10
     }
 });
 

@@ -25,7 +25,7 @@ export default function App() {
 
   return (
     <View style={styles.screen}>
-      <Button title="Add New Goal" onPress={() => setIsAddMode(true)}/>
+      <Button title="Add New Todo" onPress={() => setIsAddMode(true)}/>
       <GoalInput visible={isAddMode} onAddGoal={addGoalHandler} onCancel={cancelGoalHandler}/>
       <FlatList
         keyExtractor={(item, index) => item.id}
@@ -42,7 +42,8 @@ export default function App() {
 
 const styles = StyleSheet.create({
   screen: {
-    padding: 50,
+    paddingHorizontal: 40,
+    paddingVertical: 60
 
   }
 });
